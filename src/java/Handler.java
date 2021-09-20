@@ -29,7 +29,7 @@ public class Handler extends Calculate {
                     flag = true;
                 }
 
-            } else if (listOperations.contains(element)) {
+            } else if (listOperations.contains(element) && flag) {
                 if (stack.isEmpty()) {
                     stack.add(element);
                 } else if (element == '+' || element == '-') {
